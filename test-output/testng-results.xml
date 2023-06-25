@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-23T17:13:20Z" name="Suite" finished-at="2023-06-23T17:15:43Z" duration-ms="142956">
+    <groups>
+    </groups>
+    <test started-at="2023-06-23T17:13:20Z" name="Test" finished-at="2023-06-23T17:15:43Z" duration-ms="142956">
+      <class name="test.testCases">
+        <test-method signature="driversetup()[pri:1, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:13:20Z" name="driversetup" finished-at="2023-06-23T17:13:34Z" duration-ms="13584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driversetup -->
+        <test-method signature="search()[pri:2, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:13:34Z" name="search" finished-at="2023-06-23T17:13:38Z" duration-ms="4089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="checkbox()[pri:3, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:13:38Z" name="checkbox" finished-at="2023-06-23T17:13:42Z" duration-ms="4710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method signature="allLanguages()[pri:4, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:13:42Z" name="allLanguages" finished-at="2023-06-23T17:13:54Z" duration-ms="11392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allLanguages -->
+        <test-method signature="nameResults()[pri:5, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:13:54Z" name="nameResults" finished-at="2023-06-23T17:13:59Z" duration-ms="5267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameResults -->
+        <test-method signature="differentLevels()[pri:6, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:13:59Z" name="differentLevels" finished-at="2023-06-23T17:14:01Z" duration-ms="2277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- differentLevels -->
+        <test-method signature="forcampus()[pri:7, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:14:01Z" name="forcampus" finished-at="2023-06-23T17:14:14Z" duration-ms="12771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forcampus -->
+        <test-method signature="contactUS()[pri:8, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:14:14Z" name="contactUS" finished-at="2023-06-23T17:15:34Z" duration-ms="79746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUS -->
+        <test-method signature="screenshot()[pri:9, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:15:34Z" name="screenshot" finished-at="2023-06-23T17:15:37Z" duration-ms="3267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method signature="quit()[pri:10, instance:test.testCases@7c8c9a05]" started-at="2023-06-23T17:15:37Z" name="quit" finished-at="2023-06-23T17:15:43Z" duration-ms="5809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- test.testCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
