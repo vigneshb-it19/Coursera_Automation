@@ -13,6 +13,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class base {
 
@@ -24,6 +29,7 @@ public class base {
 	public static Properties properties;
 
 	public void driverSetup() throws IOException {
+		
 		properties = new Properties();
 		FileInputStream file = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\config.properties");
@@ -47,6 +53,21 @@ public class base {
 			System.out.println("None were Selected");
 			return;
 		}
+//////////////////////////////////////////////////////////////
+		DesiredCapabilities capability = DesiredCapabilities.firefox();
+        capability.setBrowserName(selectedBrowser);
+        capability.setPlatform(org.openqa.selenium.Platform.WINDOWS);
+        
+        URL url;
+        try {
+            url = new URL("http://localhost:4444/wd/hub");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            return;
+        }
+        
+        WebDriver driver;
+        driver = new RemoteWebDriver(url, capability);
 
 		driver.get(properties.getProperty("url"));
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
